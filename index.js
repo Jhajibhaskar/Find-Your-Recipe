@@ -2,8 +2,8 @@ const searchForm = document.querySelector("form");
 const searchResultDiv = document.querySelector(".search-result");
 const container = document.querySelector(".container");
 let searchQuery = "";
-const APP_ID = "ea6b460c";
-const APP_key = "e6822c6e487c788c767eec6943ec12c4";
+const APP_ID = "2eb60545";
+const APP_key = "0c35e911890d45048a952ff405e3b01f";
 // console.log(container)
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -37,14 +37,7 @@ function generateHTML(results) {
         }</p>
       </div>
     `
-  //   `<div class="item">
-  //   <img src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1126,w_2000,x_0,y_181/f_auto,q_auto,w_1100/v1554932288/shape/mentalfloss/12531-istock-637790866.jpg" alt="">
-  //   <div class="flex-container">
-  //     <h1 class="title">This is a recipe item</h1>
-  //     <a class="view-btn" href="#">View Recipe</a>
-  //   </div>
-  //   <p class="item-data">Calories: 120</p>
-  // </div>`
+
   });
   searchResultDiv.innerHTML = generatedHTML;
 }
